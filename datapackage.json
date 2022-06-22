@@ -1,16 +1,16 @@
 {
   "profile": "data-package",
   "name": "auxilios-sedese",
-  "title": "AuxÃ­lios SEDESE",
-  "description": "Conjunto de dados em homologaÃ§Ã£o para testar fluxo de documentaÃ§Ã£o e publicaÃ§Ã£o com template",
+  "title": "Auxílios SEDESE",
+  "description": "Conjunto de dados em homologação para testar fluxo de documentação e publicação com template",
   "homepage": "https://github.com/Andrelamor/auxilios-sedese",
   "owner_org": "secretaria-de-estado-de-desenvolvimento-social-sedese",
   "version": 0.1,
   "contributors": [
     {
-      "title": "Diretoria Central de TransparÃªncia Ativa",
+      "title": "Diretoria Central de Transparência Ativa",
       "role": "publisher",
-      "mail": "transparencia@cge.mg.gov.br"
+      "email": "transparencia@cge.mg.gov.br"
     }
   ],
   "licenses": [
@@ -20,25 +20,31 @@
       "path": "https://creativecommons.org/licenses/by/4.0/"
     }
   ],
-  "frequÃªncia de atualizaÃ§Ã£o": "Ãºnica",
+  "frequência de atualização": "única",
   "keywords": [
-    "auxÃ­lio emergencial",
+    "auxílio emergencial",
     "renda minas",
     "programas socioassistenciais"
   ],
+  "scheme": "file",
   "resources": [
     {
       "dialect": {
-        "delimiter": ";"
+        "delimiter": ","
       },
       "encoding": "utf-8-sig",
       "format": "csv",
       "hashing": "md5",
-      "name": "auxilio-emergencial-mineiro-2021",
-      "path": "data/auxilio-emergencial-mineiro-2021.csv",
+      "name": "renda-minas-2020",
+      "path": "data/renda-minas-2020.csv",
+      "title": "Renda Minas",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
           {
             "name": "CPF",
             "type": "string"
@@ -53,13 +59,40 @@
           }
         ]
       },
-      "scheme": "file",
-      "stats": {
-        "hash": "501a9e05a73b157bae0c6be2e7f66ef0",
-        "bytes": 64380042,
-        "fields": 3,
-        "rows": 1027642
-      }
+      "scheme": "file"
+    },
+    {
+      "dialect": {
+        "delimiter": ","
+      },
+      "encoding": "utf-8-sig",
+      "format": "csv",
+      "hashing": "md5",
+      "name": "auxilio-emergencial-mineiro-2021",
+      "path": "data/auxilio-emergencial-mineiro-2021.csv",
+      "title": "Auxílio Emergencial Mineiro",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "CPF",
+            "type": "string"
+          },
+          {
+            "name": "NOME",
+            "type": "string"
+          },
+          {
+            "name": "GRU_PAG",
+            "type": "string"
+          }
+        ]
+      },
+      "scheme": "file"
     }
   ]
 }
