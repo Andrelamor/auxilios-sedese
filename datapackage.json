@@ -42,7 +42,7 @@
       "schema": {
         "fields": [
           {
-            "name": "id",
+            "name": "ID",
             "type": "string"
           },
           {
@@ -75,7 +75,7 @@
       "schema": {
         "fields": [
           {
-            "name": "id",
+            "name": "ID",
             "type": "string"
           },
           {
