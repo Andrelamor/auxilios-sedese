@@ -1,5 +1,5 @@
 fields:
-  - name: id
+  - name: ID
     type: string
   - name: CPF
     type: string
