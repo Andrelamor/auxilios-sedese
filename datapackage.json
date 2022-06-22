@@ -1,0 +1,98 @@
+{
+  "profile": "data-package",
+  "name": "auxilios-sedese",
+  "title": "Auxílios SEDESE",
+  "description": "Conjunto de dados em homologação para testar fluxo de documentação e publicação com template",
+  "homepage": "https://github.com/Andrelamor/auxilios-sedese",
+  "owner_org": "secretaria-de-estado-de-desenvolvimento-social-sedese",
+  "version": 0.1,
+  "contributors": [
+    {
+      "title": "Diretoria Central de Transparência Ativa",
+      "role": "publisher",
+      "email": "transparencia@cge.mg.gov.br"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "frequência de atualização": "única",
+  "keywords": [
+    "auxílio emergencial",
+    "renda minas",
+    "programas socioassistenciais"
+  ],
+  "scheme": "file",
+  "resources": [
+    {
+      "dialect": {
+        "delimiter": ","
+      },
+      "encoding": "utf-8-sig",
+      "format": "csv",
+      "hashing": "md5",
+      "name": "renda-minas-2020",
+      "path": "data/renda-minas-2020.csv",
+      "title": "Renda Minas",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "CPF",
+            "type": "string"
+          },
+          {
+            "name": "NOME",
+            "type": "string"
+          },
+          {
+            "name": "GRU_PAG",
+            "type": "string"
+          }
+        ]
+      },
+      "scheme": "file"
+    },
+    {
+      "dialect": {
+        "delimiter": ","
+      },
+      "encoding": "utf-8-sig",
+      "format": "csv",
+      "hashing": "md5",
+      "name": "auxilio-emergencial-mineiro-2021",
+      "path": "data/auxilio-emergencial-mineiro-2021.csv",
+      "title": "Auxílio Emergencial Mineiro",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "CPF",
+            "type": "string"
+          },
+          {
+            "name": "NOME",
+            "type": "string"
+          },
+          {
+            "name": "GRU_PAG",
+            "type": "string"
+          }
+        ]
+      },
+      "scheme": "file"
+    }
+  ]
+}
