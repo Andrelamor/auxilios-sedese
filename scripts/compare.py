@@ -5,9 +5,11 @@ from frictionless import Package
 def compare_data_resource_paths():
   data_resources_names = os.listdir('data')
   data_resources_paths = [os.path.join('data', i) for i in data_resources_names]
+  print(data_resources_paths)
   local_package = Package('datapackage.json')
-  datapackage_resouces_paths = [i["path"] for i in local_package.resources]
-  if data_resources_paths != datapackage_resouces_paths:
+  datapackage_resources_paths = [i["path"] for i in local_package.resources]
+  print(datapackage_resources_paths)
+  if data_resources_paths != datapackage_resources_paths:
     print("Resources presentes no arquivo datapackage.json diferente dos listados da pasta data.")
     sys.exit(1)
   print("Resources presentes no arquivo datapackage.json iguais aos listados da pasta data.")

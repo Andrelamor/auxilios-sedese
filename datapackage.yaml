@@ -39,6 +39,3 @@ resources:
     title: Auxílio Emergencial Mineiro
     profile: tabular-data-resource
     schema: schemas/schema_v1.yaml
-
-
-
