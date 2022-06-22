@@ -7,7 +7,7 @@ owner_org: secretaria-de-estado-de-desenvolvimento-social-sedese
 version: 0.1
 contributors:
   - title: Diretoria Central de Transparência Ativa
-    role: publisher
+    role: author
     email: transparencia@cge.mg.gov.br
 licenses:
   - name: CC-BY-4.0
