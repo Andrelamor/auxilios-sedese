@@ -1,9 +1,21 @@
 fields:
   - name: ID
     type: string
+    title: Nome do programa
+    description: >-
+      Identificação do programa de transferência de renda (Programa Renda Minas ou Benefício Financeiro Força Família - Auxílio Emergencial Mineiro)
   - name: CPF
     type: string
+    title: CPF do beneficiário
+    description: >-
+      Número de inscrição do Responsável Familiar no Cadastro de Pessoas Físicas, com ocultação dos 3 primeiros e dos 2 últimos dígitos.
   - name: NOME
     type: string
+    title: Nome do beneficiário
+    description: >-
+      Nome completo do Responsável Familiar
   - name: GRU_PAG
     type: string
+    title: Data do pagamento
+    description: >-
+      Data de eetivação do pagamento do benefício
